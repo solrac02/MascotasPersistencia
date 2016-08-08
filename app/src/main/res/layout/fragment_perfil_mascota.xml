@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.RecyclerViewMascotasFragment">
+
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/civ_mascota"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mascota_3"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="10"
+        app:civ_shadow_color="#8BC34A"/>
+
+    <LinearLayout
+        android:id="@+id/llonombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/civ_mascota"
+        android:weightSum="1"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tvNombreMascotaFrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/nombreMascota"
+            android:textSize="@dimen/nombreMascota"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+             />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout"
+        android:layout_below="@id/llonombre">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvTopMascotasFrag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/civ_mascota"
+            android:layout_centerHorizontal="true" />
+
+    </GridLayout>
+
+
+
+
+</RelativeLayout>

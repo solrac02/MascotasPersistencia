@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvMascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    card_view:cardCornerRadius="@dimen/corner_radius_cardview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+        android:id="@+id/imgMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mascota_1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+            <ImageButton
+                android:id="@+id/btnHueso1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dogbone_1"
+                />
+
+            <TextView
+                android:id="@+id/tvNombreMascota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombreMascota"
+                android:textSize="@dimen/nombreMascota"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/btnHueso1"
+                android:layout_toEndOf="@+id/btnHueso1" />
+
+            <TextView
+                android:id="@+id/tvNumLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombreFavorito"
+                android:textSize="@dimen/nombreMascota"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_centerVertical="true"
+                android:layout_alignTop="@+id/tvNombreMascota"
+                android:layout_toLeftOf="@+id/btnHueso2"
+                android:layout_toStartOf="@+id/btnHueso2" />
+
+            <ImageButton
+                android:id="@+id/btnHueso2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dogbone_2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

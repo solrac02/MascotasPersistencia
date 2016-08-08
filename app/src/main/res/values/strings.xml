@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MascotasRV</string>
+    <string name="nombreMascota">Dashita</string>
+    <string name="nombreFavorito">5</string>
+    <string name="menu_contacto">Contacto</string>
+    <string name="menu_acercade">Acerca de...</string>
+    <string name="txt_nombre">Nombre completo</string>
+    <string name="txt_email">Email</string>
+    <string name="txt_mensaje">Escribe el mensaje a enviar</string>
+    <string name="txt_btn_enviar_comentario">enviar Comentario</string>
+    <string name="txt_titulo">Envia tus comentarios</string>
+    <string name="txt_acerca_de">El desarrollador de este sistema es Juan Carlos Morales Alpizar \n\n
+                                 Dicho desarrollo fue realizado para Coursera en el Curso de: \n\n
+                                "Desarrollo de Aplicaciones con Android"</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
